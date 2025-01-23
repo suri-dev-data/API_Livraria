@@ -1,7 +1,8 @@
 import mongoose from "mongoose"
 
-mongoose.connect("mongodb+srv://alura:123@alura.dkjed.mongodb.net/alura-node");
+// eslint-disable-next-line no-undef
+mongoose.connect(process.env.STRING_CONNECTION_DB);
 
-let db = mongoose.connection;
+let db =  mongoose.connection;
 
 export default db;
